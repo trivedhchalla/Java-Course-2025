@@ -1,0 +1,147 @@
+QUESTIONS YOU SHOULD ANSWERS ??
+
+DIFF TYPES OF PROGRAMMING PARADIGMS 
+
+WHAT IS JAVA ??
+
+JAVA ARHITECTURE ??
+
+COMPONENTS OF JAVA ARCHITECTURE 
+
+IF RUN A METHOD CALL FOR MORETHAN 10K THEN JIT WILL CONVERT THIS INTO A MACHINE CODE WHICH WILL BE VERY FAST i.e AS TIME PASSES THE JAVA APP INC SPEED
+
+JAVA VARIBLES AND DIFF CASES OF NAMING CONVENTION
+
+DATATYPES i)PRIMITIVE : 8 OBJECT ii)NON-PRIMITIVE array / string / 
+
+INPUT:	
+	SCANNER SC = NEW SCANNER(SYSTEM.IN) 
+	SC.NEXTDATATYPE 
+
+OPERATORS: ARITHEMETIC / RELATIONAL / BITWISE / UNARY / TERNARY / LOGICAL / ASSIGNMENT 
+	
+IF-ELSE IF - ELSE CONSTROL STATEMENTS
+
+RES = COND ? RES1 : RES2// ternary operator
+
+SWITCH(EXPRESSION){
+  CASE :
+	BREAK
+}
+
+LOOPS 
+	I)WHILE 2)DO-WHILE 3)FOR 
+	CONCEPT OF LABELLING 
+
+TYPE CONVERSIONS:
+	I)IMPLICIT: DONE BY COMPILERS IT SELF i.e STORING LESS SPACE ONE IN LARGE ONE 
+	long num = 12;
+	II)EXPLICIT: CASTING BY MANUALLY 
+	long num2 = 152;
+	int num3 = (int)num2;
+
+BINARY SUBTRACTION: M - N = M + (-N) 
+- M = 2'S COMPLEMENT OF M
+
+-->OBJECT ORIENTED PROGRAMMING: 
+	class / attributes/constructors/
+	Object== Identity(name) + state(attributes) + behavior(method)
+	Class c1 = new Class();
+	
+						Static vs Instance Variable:
+	a)without obj i.e only class required   a)with obj
+	b)Class.st_name 			b) class obj = new Class();obj.var()
+	c)in the memory area of jit 		c) in heap memory
+	d)same for every obj			d)may be diff for every obj
+	e)until class in jvm it alive 		e) until class is loaded 
+
+	--->Access Modifier table 
+	---> Scope and Namespace: scope class/method/block {} 
+	
+	---> Pass by value and Pass by refernce 
+	
+	---> Stack vs Heap Memory
+
+	Methods: the block of code which runs only when its invoked or called 
+	User-defined vs Standard Library Methods 
+	Method Signature: no of paraments / parameters 
+
+	I)ENCAPSULATION: make access modifier as private and use getter/setter for the assignment/retrieval things
+	II)INHERITANCE: i)single: parent<---child
+			ii)multi level: parent<---child<---grand child		
+			iii)Hierarchical: parent -->child1 and child2
+			iv)multiple level: which java donot support parent1 parent2
+									\ 	/
+									  child	
+	III)Polymorphism: one name but diff forms/process
+		a)Compile time: overloading becoz it have same name but the signature ie parameters are diff since at call time only function gets to know about the function which we want 
+		b)Run time: overriding becoz it have same name but the process is changed function at time of execution we will get to know that which classes method is called parent or child
+	IV)Abstraction: the class which have just defined the function in this and the implementation will be done by other class
+		a)abstract class:
+			examples: bank is basic layout and it method are implemented by each company individually acc to their requirements
+				abstract class Bank{
+					public String greet(){}					
+					public void deposit(int amt){}
+					public String withDraw(int amt){}
+				}
+				class SBI implements Bank{
+					public String greet(){
+						return "Welcome to SBI";					
+					}			
+					public void deposit(int amt){
+						this.balance += amt;
+					}
+					public void withdraw(int amt){
+						this.balance -= amt;
+					}
+				}			
+				class PNB implements Bank{
+					public String greet(){
+						return "Welcome to SBI";					
+					}			
+					public void deposit(int amt){
+						this.balance += amt;
+					}
+					public void withdraw(int amt){
+						this.balance -= amt;
+					}
+				}
+		
+		b)interface: this is used when we want to add a new feature to an existing child class 
+			      We want this becoz if we implement in parent class then other child of that class must also implement the method
+
+
+----> DATA STRUCTURES & ALGORITHMS:
+	
+	ARRAYS-1D/2D/ && ARRAYLIST
+Arrays: collection of data of same datatype 
+	->Fixed size ->Indexing 0 -> Continuous stored in the memory -> array in heap and loc of first ele in the in stack 
+	-> datatype[] arr = {// this is literals} or new int[array size]
+	
+       -->Multi-Dimensional-Arrays: 
+		datatype[// last one must have the size][] = int [3][]; the first one is important since that is the final array and it size should be fixed
+		int[3][4] arr = {{1,2,3,4},{5,6,7,8},{9,10,11,12}} // the  outer array is mandatory we should define the size of it as 3
+
+	--->Shallow Copy: this only copies the refers of the obj
+		int[] arr = { 1,3,4}
+		arr2 = arr // in the arr2 the reference of arr is stored and if u change in arr2 you will see in arr as well
+	--->Deep Copy: this completely copies the objects 
+		int[] arr = {1,3,4}
+		arr2 = arr.clone();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
